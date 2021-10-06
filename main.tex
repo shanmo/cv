@@ -1,0 +1,363 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mo Shan (Sean)} \\ \vspace{1pt}
+    \small moshan@ucsd.edu $|$
+    \href{https://moshan.cf}{\underline{http://moshan.cf/}} $|$ 
+    \href{https://www.linkedin.com/in/mo-shan-21393452/}{\underline{https://www.linkedin.com/in/mo-shan}} $|$
+    \href{https://github.com/shanmo}{\underline{https://github.com/shanmo}} $|$ 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    % \resumeSubheading
+    %   {University of California, San Diego}{La Jolla, CA, USA}
+    %   {PhD in Electrical and Computer Engineering, \textit{GPA 3.74/4}}{Expected Jun. 2022}
+    \resumeSubheading
+      {University of California, San Diego}{La Jolla, CA, USA}
+      {Master of Science in Electrical and Computer Engineering, \textit{GPA 3.74/4}}{Sept. 2016 -- Dec. 2019}
+    \resumeSubheading
+      {National University of Singapore}{Singapore}
+      {Bachelor of Science in Electrical and Computer Engineering, \textit{GPA 4.84/5}}{Sept. 2010 -- Jun. 2014}
+    \resumeSubheading
+      {University of Southampton}{Southampton, United Kingdom}
+      {Student Exchange Program in School of Electronics and Computer Science}{Dec. 2012 -- Jul. 2013}
+  \resumeSubHeadingListEnd
+
+
+%-----------Research Interests-----------
+\section{Research Interests}
+  \resumeSubHeadingListStart
+      \resumeSubItem
+      
+\resumeItemListStart
+\resumeSubHeadingListEnd
+
+  \resumeItemListStart
+  \resumeItem{Rich models of tightly coupled localization and environmental representation that unify multiple characteristics, such as the geometric landmarks, semantic object-level map, object surfaces, and yet scale to large environments in real-time on embedded platforms such as quadrotors}
+  \resumeItem{Simultaneous localization and mapping; visual-inertial odometry}
+  \resumeItem{Relevant fields: computer vision, machine learning, optimization}
+  \resumeItemListEnd
+  
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Intern}{Jun. 2021 -- Sept. 2021}
+      {\textsc{Facebook Reality Labs}}{USA}
+      \resumeItemListStart
+        \resumeItem{Worked remotely on a project related to AR/VR and delivered results with a high impact}
+        \resumeItem{Used modern C++, Python, PyTorch}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Graduate Student Researcher}{Jun. 2018 -- Jun. 2021}
+      {\textsc{ECE, UCSD}}{USA}
+      \resumeItemListStart
+        \resumeItem{Designed and developed a tightly coupled, filtering based semantic VIO (OrcVIO) that produces an object-level map, with C++, Python, OpenCV, Sophus, Eigen, PyTorch}
+        \resumeItem{OrcVIO is $4.8\%$ better in object mapping accuracy compared with a single view object mapping approach, and $23.4\%$ better in localization accuracy compared with an object SLAM approach, on the KITTI dataset}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Associate Scientist}{Jun. 2014 -- Sept. 2016}
+      {\textsc{Temasek Laboratories}}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Developed a Google Map aided visual odometry with C++, OpenCV, Dlib, which increases the localization accuracy by $96.0\%$ compared with the baseline}
+        \resumeItem{Implemented an UAV navigation approach based on a laser-stereo sensor suite with C++, OpenCV}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Summer Intern}{Jun. 2012 -- Sept. 2012}
+      {\textsc{Infineon}}{Singapore}
+      \resumeItemListStart
+        % \resumeItem{Evaluated the performance of the AC-HMI-OLED prototype card}
+        % \resumeItem{Performed quality test of the Class D amplifier, Infrared Receiver and the Boost Converter}
+        \resumeItem{Tested features such as a-law compression, volume control, Manchester decoding and voltage conversion}
+        \resumeItem{Developed a Simulink model for touch sensing, and performed real time noise filtering}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Summer Intern}{Jun. 2011 -- Sept. 2011}
+      {\textsc{Interactive Digital Media Institute}}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Implemented a foreground detection algorithm based on RPCA using MATLAB, reaching more than $70\%$ precision at recall higher than $90\%$, which outperforms state-of-the-art}
+        \resumeItem{Designed and developed a painting classification algorithm using sparse coding with MATLAB, achieving $2.3$ times better authentication accuracy than the baseline}
+    \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++ 11/14/17, MATLAB} \\
+     \textbf{Frameworks}{: ROS} \\
+     \textbf{Developer Tools}{: Vim, Git, Docker, VS Code, PyCharm} \\
+     \textbf{Libraries}{: OpenCV, Dlib, scikit-image $\|$ Eigen, Sophus $\|$ PyTorch, Tensorflow, Keras}
+    }}
+ \end{itemize}
+
+  
+%-----------Awards-----------
+\section{Awards}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Multi-Year Dean$'$s Fellowship and Jacobs Fellowship}{Sept. 2016 -- Sept. 2017}
+      {\textsc{UCSD}}{La Jolla, CA, USA}
+      \resumeItemListStart
+        \resumeItem{Most prestigious fellowship offered by the ECE Department}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The 3rd International UAV Innovation Grand Prix}{Nov. 2015}
+      {AVIC}{Zhejiang, China}
+      \resumeItemListStart
+        \resumeItem{Championship of rotary wing competition with a monetary prize of 100,000 RMB}
+        \resumeItem{Designed and implemented a bucket detection algorithm to guide bucket transfer for the firefighting task using a UAV, with C++, OpenCV and Dlib}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Visualized GitHub data to show collaboration}
+%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%           \resumeItemListStart
+%             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+%-----------Professional Activities-----------
+\section{Professional Activities}
+  \resumeSubHeadingListStart
+  
+  \resumeItem{\textbf{Teaching Assistant}}
+      \resumeItemListStart
+        \resumeItem{ECE 276A: Sensing $\&$ Estimation in Robotics (Winter Quarter, 2021)}
+        \resumeItem{Class size: 80. Duties include answering questions related to lecture notes, grading the homework and projects, and designing a project on VI SLAM.)}
+        \resumeItem{For the students who provided evaluation, 75.0\% says "Strongly Agree" when asked "I would recommend this Instructional Assistant to other students.".}
+    \resumeItemListEnd
+  
+  \resumeItem{\textbf{Talks}}
+      \resumeItemListStart
+        \resumeItem{"OrcVIO: Object residual constrained Visual-Inertial Odometry", IROS Oral Presentation, Oct. 25, 2020.}
+        \resumeItem{"Geo-referenced UAV Localization", Paopao Robot Open-course, April 21, 2018.}
+    \resumeItemListEnd
+  
+  \resumeItem{\textbf{Reviewer}}
+      \resumeItemListStart
+        \resumeItem{Journals: IEEE Transactions on Robotics (T-RO), IEEE Robotics and Automation Letters (RA-L), International Journal of Computer Vision (IJCV)}
+        \resumeItem{Conferences: IEEE International Conference on Robotics and Automation (ICRA), IEEE International Conference on Intelligent Robots and Systems (IROS), IEEE International Conference on Computer Vision and Pattern Recognition (CVPR)}
+    \resumeItemListEnd
+    
+  \resumeItem{\textbf{Successful Grant Proposals}}
+      \resumeItemListStart
+        \resumeItem{NSF research grant. \textit{Lyapunov-Certified Cognitive Control for Safe
+Autonomous Navigation in Unknown Environments}. (2017). Principal investigator: Prof. Nikolay Atanasov.}
+        \resumeItem{Temasek Laboratories research grant for seed projects. \textit{Laser-aided Stereo Vision for UAV Navigation}. (2015). Principal investigator: Mo Shan.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------------------------------------------------------------------------------------
+%	One Page 
+%----------------------------------------------------------------------------------------
+
+%-----------Selected publications-----------
+\section{Selected Publications}
+  \resumeSubHeadingListStart
+  
+  \resumeItem{\textbf{Journal Articles}}
+      \resumeItemListStart
+        \resumeItem{\textbf{M. Shan}, V. Dhiman, Q. Feng, J. Li, N. Atanasov. “OrcVIO: Object residual constrained Visual-Inertial Odometry”. (2021). arXiv:2007.15107. Submitted to IEEE Transactions on Robotics (T-RO).}
+        \resumeItem{Z. Gao, \textbf{M. Shan}, Q. Li. (2015). Adaptive Sparse Representation for Analyzing Artistic Style of Paintings. ACM Journal on Computing and Cultural Heritage.}
+        \resumeItem{Z. Gao, Q. Li., R. Zhai, \textbf{M. Shan}, F. Lin. (2015). Adaptive and Robust Sparse Coding for Laser Range Data Denoising and Inpainting. IEEE Transactions on Circuits and Systems for Video Technology.}
+    \resumeItemListEnd
+    
+  \resumeItem{\textbf{Conference Proceedings}}
+      \resumeItemListStart
+        \resumeItem{\textbf{M. Shan}, Q. Feng, Y. Jau, N. Atanasov. (2021). “ELLIPSDF: Joint Object Pose and Shape Optimization with a Bi-level Ellipsoid and Signed Distance Function Description”. In IEEE International Conference on Computer Vision (ICCV). Montreal, Canada. \textbf{25.9\% acceptance rate}.}
+        \resumeItem{\textbf{M. Shan}, Q. Feng, N. Atanasov. (2020). OrcVIO: Object residual constrained Visual-Inertial Odometry. In IEEE International Conference on Intelligent Robots and Systems (IROS). Las Vegas, USA. \textbf{47\% acceptance rate}.}
+        \resumeItem{Q. Feng, Y. Meng, \textbf{M. Shan}, N. Atanasov. (2019). Localization and Mapping using Instance-specific Mesh Models. In IEEE International Conference on Intelligent Robots and Systems (IROS). Macao, China.}
+        \resumeItem{\textbf{M. Shan}, Y. Bi, H. Qin, J. Li, Z. Gao, F. Lin and B. M. Chen. (2016). A brief survey of visual odometry for micro aerial vehicles, Proceedings of the 42nd Annual Industrial Electronics Conference (IECON), Florence, Italy.}
+        \resumeItem{\textbf{M. Shan}, Fei Wang, Feng Lin, Zhi Gao, Ya Z. Tang, Ben M. Chen. (2015). Google Map Aided Visual Navigation for UAVs in GPS-denied Environment. In IEEE International Conference on Robotics and Biomimetics (ROBIO). Zhuhai, China.}
+        \resumeItem{Z. Gao, \textbf{M. Shan}, L. Cheong, Q. Li. (2014). Adaptive Sparse Coding for Painting Style Analysis. In Computer Vision-ACCV 2014. Springer Berlin Heidelberg.}
+        \resumeItem{Z. Gao, L. Cheong, \textbf{M. Shan}. (2012). Block-sparse rpca for consistent foreground detection. In Computer Vision-ECCV 2012 (pp. 690-703). Springer Berlin Heidelberg.}
+    \resumeItemListEnd
+    
+  \resumeItem{\textbf{Workshop Papers}}
+      \resumeItemListStart
+        \resumeItem{\textbf{M. Shan}. (2019). Weakly supervised keypoint detection. Southern California Robotics Symposium (SCR), Pasadena, USA.}
+        \resumeItem{\textbf{M. Shan}, N. Atanasov. (2017). A spatiotemporal model with visual attention for video classification. In Robotics: Science and Systems (RSS) Workshop on Articulated Model Tracking, Cambridge, USA.}
+        \resumeItem{\textbf{M. Shan}, A. Charan. (2015). Google Map Referenced UAV Navigation via Simultaneous Feature Detection and Description. Poster paper. In IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Hamburg, Germany.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
