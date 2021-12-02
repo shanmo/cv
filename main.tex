@@ -19,7 +19,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
-
+\usepackage[footskip=5pt]{geometry}% <- added
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -123,9 +123,9 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    % \resumeSubheading
-    %   {University of California, San Diego}{La Jolla, CA, USA}
-    %   {PhD in Electrical and Computer Engineering, \textit{GPA 3.74/4}}{Expected Jun. 2022}
+    \resumeSubheading
+      {University of California, San Diego}{La Jolla, CA, USA}
+      {Candidate of Philosophy in ECE, \textit{GPA 3.74/4}}{Dec. 2019 -- Dec. 2021}
     \resumeSubheading
       {University of California, San Diego}{La Jolla, CA, USA}
       {Master of Science in Electrical and Computer Engineering, \textit{GPA 3.74/4}}
@@ -142,24 +142,32 @@
 
 
 %-----------Research Interests-----------
-% \section{Research Interests}
-%   \resumeSubHeadingListStart
-%       \resumeSubItem
+\section{Research Interests}
+  \resumeSubHeadingListStart
+      \resumeSubItem
       
-% \resumeItemListStart
-% \resumeSubHeadingListEnd
+\resumeItemListStart
+\resumeSubHeadingListEnd
 
-%   \resumeItemListStart
-%   \resumeItem{Rich models of tightly coupled localization and environmental representation that unify multiple characteristics, such as the geometric landmarks, semantic object-level map, object surfaces, and yet scale to large environments in real-time on embedded platforms such as quadrotors}
-%   \resumeItem{Simultaneous localization and mapping; visual-inertial odometry}
-%   \resumeItem{Relevant fields: computer vision, machine learning, optimization}
-%   \resumeItemListEnd
+  \resumeItemListStart
+  \resumeItem{Rich models of tightly coupled localization and environmental representation that unify multiple characteristics, such as the geometric landmarks, semantic object-level map, object surfaces, and yet scale to large environments in real-time on embedded platforms such as quadrotors}
+  \resumeItem{Simultaneous localization and mapping; visual-inertial odometry}
+  \resumeItem{Relevant fields: computer vision, machine learning, optimization}
+  \resumeItemListEnd
   
-%   \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Graduate Student Researcher}{Sept. 2021 -- Dec. 2021}
+      {\textsc{ECE, UCSD}}{USA}
+      \resumeItemListStart
+        \resumeItem{Implemented OrcVIO-Lite, OrcVIO-Stereo, for distributed SLAM and map alignment using C++, ROS}
+        \resumeItem{Performed evaluation in Unity simulator and real robots using RealSense D435i, D455, on NVIDIA's Jetson AGX Xavier, Jackal}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Research Intern}{Jun. 2021 -- Sept. 2021}
@@ -242,7 +250,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C++ 11/14/17, MATLAB} \\
+     \textbf{Languages}{: Python, C++ 11/14/17/20, MATLAB} \\
      \textbf{Frameworks}{: ROS} \\
      \textbf{Developer Tools}{: Vim, Git, Docker, VS Code, PyCharm} \\
      \textbf{Libraries}{: OpenCV, Dlib, scikit-image $\|$ Eigen, Sophus $\|$ PyTorch, Tensorflow, Keras}
@@ -325,10 +333,10 @@ Autonomous Navigation in Unknown Environments}. (2017). Principal investigator: 
         \resumeItem{Temasek Laboratories research grant for seed projects. \textit{Laser-aided Stereo Vision for UAV Navigation}. (2015). Principal investigator: Mo Shan.}
     \resumeItemListEnd
     
-\resumeItem{\textbf{Membership}}
-    \resumeItemListStart
-     \resumeItem{IEEE Student Member}
-    \resumeItemListEnd
+% \resumeItem{\textbf{Membership}}
+%     \resumeItemListStart
+%      \resumeItem{IEEE Student Member}
+%     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 
